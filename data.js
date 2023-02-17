@@ -411,9 +411,9 @@ function change(){
 	var month_68 = Number.parseInt(date_68.split("/")[1]);
 	var day_68 = Number.parseInt(date_68.split("/")[0]);
 	var date = new Date();
-	var year = 2023;//date.getFullYear();
-	var month = 1;//date.getMonth() + 1;
-	var day = 1;//date.getDate();
+	var year = date.getFullYear();
+	var month = date.getMonth() + 1;
+	var day = date.getDate();
 	var infos = data[month - 1][day - 1];
 	if (infos.length > 0){
 		var data_str = '<h1>Hommage aux enfants du convoi 68 déportés à Auschwitz</h1>';
